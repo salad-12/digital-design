@@ -1,0 +1,67 @@
+We show how to use the 7474 D-Flip Flop ICs in
+a sequential circuit to realize a decade counter.
+\subsection{Components}
+\begin{table}[!ht]
+\centering
+\input{ide/7474/figs/components.tex}
+\caption{}
+\label{table:components-7474}
+\end{table}
+
+\subsection{Decade Counter}
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\item
+Generate the CLOCK signal using the \textbf{blink} program. 
+
+
+\item
+Connect the Arduino, 7447 and the two 7474 ICs according to Table \ref{fig:ff_ard_pin} and Fig. \ref{fig:decade_counter}. The pin diagram for 7474 is available in Fig. \ref{fig:7474}
+
+			\begin{table*}[!ht]
+%\begin{table}
+\centering
+\input{ide/7474/figs/ff_ard_pin.tex}
+\caption{}
+\label{fig:ff_ard_pin}
+%\end{table}
+\end{table*}
+%
+\begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{ide/7474/figs/7474.tex}
+}
+\end{center}
+\caption{}
+\label{fig:7474}
+\end{figure}
+
+%
+\item
+			\iffalse
+Intelligently use the code in 
+\begin{lstlisting}
+ide/7447/codes/inc_dec/inc_dec.ino
+\end{lstlisting}
+and
+			\lstinputlisting{ide/7447/codes/inc_dec/ip_inc_dec.ino}
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/ip_inc_dec/ip_inc_dec.ino
+\end{lstlisting}
+\fi
+Realize the decade counter in Fig. \ref{fig:decade_counter}.
+ 
+ \begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{ide/7474/figs/decade_counter.tex}
+}
+\end{center}
+\caption{}
+\label{fig:decade_counter}
+\end{figure}
+%
+
+	\end{enumerate}
+
+

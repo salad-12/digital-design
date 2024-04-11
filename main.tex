@@ -1,0 +1,112 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{gvv-book}
+\usepackage{gvv}
+
+\makeindex
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\onecolumn
+
+
+\title{
+	\begin{flushleft}
+Digital Design \\ {Through Embedded Programming}
+	\\
+\rule{0.4\columnwidth}{0.4pt}
+\end{flushleft}
+}
+\author{
+\vspace{7cm}
+	\begin{flushleft}
+\includegraphics[width=0.2\columnwidth]{figs/logo.jpg}
+\\
+		{	\huge G. V. V. Sharma}
+		\\
+\vspace{1cm}
+https://creativecommons.org/licenses/by-sa/3.0/
+\\
+and
+\\
+https://www.gnu.org/licenses/fdl-1.3.en.html
+	\end{flushleft}
+%\IEEEpubid{\makebox[\columnwidth]{978-1-7281-5966-1/20/\$31.00 ©2020 IEEE \hfill} \hspace{\columnsep}\makebox[\columnwidth]{ }}
+}
+\maketitle
+
+\newpage
+
+
+\tableofcontents
+
+\newpage
+\twocolumn
+
+
+\numberwithin{figure}{section}
+\numberwithin{table}{section} 
+\numberwithin{equation}{section}
+\iffalse
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\renewcommand{\theequation}{\theenumi}
+\fi
+
+\section{Installation}
+\input{installation/main.tex}
+\newpage
+\section{Seven Segment Display}
+\input{ide/sevenseg/main.tex}
+\newpage
+\section{7447}
+\input{ide/7447/main.tex}
+\subsection{Problems}
+\input{ide/7447/problems.tex}
+\newpage
+\section{Karnaugh Map}
+\subsection{ Incrementing Decoder}
+\input{ide/kmap/main.tex}
+\subsection{Dont Care}
+\input{ide/dontcare/main.tex}
+\subsection{Problems}
+\input{ide/kmap/problems.tex}
+\newpage
+\section{7474}
+\input{ide/7474/main.tex}
+\subsection{Problems}
+\input{ide/7474/problems.tex}
+\newpage
+\section{Finite State Machine}
+\input{ide/fsm/main.tex}
+\subsection{Problems}
+\input{ide/fsm/problems.tex}
+\newpage
+\section{Assembly Programming}
+\subsection{Setup}
+\input{assembly/setup/main.tex}
+\subsection{Seven Segment Display}
+\input{assembly/sevenseg/main.tex}
+\subsection{7447}
+\input{assembly/7447/count/main.tex}
+\subsection{Display Control}
+\input{assembly/7447/io/main.tex}
+\subsection{Blink through TIMER}
+\input{assembly/timer/main.tex}
+\subsection{Memory}
+\input{assembly/memory/main.tex}
+\subsection{Problems}
+\input{assembly/problems.tex}
+\newpage
+\section{Embedded C}
+\subsection{Blink}
+\input{avr-gcc/setup/main.tex}
+\subsection{Display Control}
+\input{avr-gcc/sevenseg/main.tex}
+\subsection{GCC-Assembly}
+\input{avr-gcc/gcc-assembly/main.tex}
+\subsection{LCD}
+\input{avr-gcc/lcd/main.tex}
+\subsection{Problems}
+\input{avr-gcc/Platformio_Question.tex}
+\end{document}
+
