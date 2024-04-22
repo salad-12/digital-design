@@ -41,14 +41,9 @@ apt install python3-pip python3-numpy python3-scipy python3-matplotlib python3-m
 #------------------ End installing python3 on termuxdebian----------------------------
 
 #------------------ Installing platformio on termuxdebian----------------------------
-curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
-python3 get-platformio.py
-mkdir .local/bin
-echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.profile
-ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio 
-ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio 
-ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
-reboot
+python3 -m venv gvenv 
+source gvenv/bin/activate
+pip3 install platformio
 #------------------ End installing python3 on termuxdebian----------------------------
 \end{lstlisting}
 \item Execute the following on debian
