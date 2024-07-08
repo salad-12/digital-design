@@ -1,11 +1,13 @@
 \subsection{Termux}
 \begin{enumerate}[label=\arabic*.,ref=\theenumi]
-	\item On your android device, install 
-fdroid apk from
+	\item On your android device, follow the instructions in 
+%fdroid apk from
 %
 \begin{lstlisting}
-https://www.f-droid.org/
+https://github.com/gadepall/fwc-1
 \end{lstlisting}
+to setup and install Debian on Termux.
+\iffalse
 \item Install Termux from apkpure
 \item Install basic packages on termux 
 \begin{lstlisting}
@@ -25,27 +27,19 @@ apt install curl git wget subversion proot proot-distro python  nmap neovim rang
 proot-distro install debian
 proot-distro login debian
 \end{lstlisting}
+\fi
 \end{enumerate}
 \subsection{Platformio }
 \begin{enumerate}[label=\arabic*.,ref=\theenumi]
 	\item Install Packages
 \begin{lstlisting}
-apt update && apt upgrade
-apt install apt-utils build-essential cmake neovim
-apt install git  wget  subversion imagemagick  nano  
 apt install avra avrdude gcc-avr avr-libc
-#------------------End Installing debian on termux----------------------------
-
-#------------------ Installing python3 on termuxdebian----------------------------
-apt install python3-pip python3-numpy python3-scipy python3-matplotlib python3-mpmath python3-sympy python3-cvxopt
-#------------------ End installing python3 on termuxdebian----------------------------
-
-#------------------ Installing platformio on termuxdebian----------------------------
-python3 -m venv gvenv 
-source gvenv/bin/activate
-pip3 install platformio
-#------------------ End installing python3 on termuxdebian----------------------------
 \end{lstlisting}
+\item Follow the instructions in 
+\begin{lstlisting}
+https://docs.platformio.org/en/stable/core/installation/methods/installer-script.html#super-quick-macos-linux
+\end{lstlisting}
+to install platformio.
 \item Execute the following on debian
 \begin{lstlisting}
 cd ide/piosetup/codes
@@ -70,7 +64,7 @@ Actions->Upload->Upload Precompiled
 \end{lstlisting}
 then go to your working directory and select
 \begin{lstlisting}
-pio/build/uno/firmwarehex
+pio/build/uno/firmware.hex
 \end{lstlisting}
 for uploading hex file to the Arduino Uno
 \item The LED beside pin 13 will start
