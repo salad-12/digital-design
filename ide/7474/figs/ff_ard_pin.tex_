@@ -123,11 +123,23 @@
 \setlongtables
 
 \setlength\gnumericTableWidth{%
-	133pt+%
-	54pt+%
-	57pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	15pt+%
+	10pt+%
+	10pt+%
+	17pt+%
+	17pt+%
 0pt}
-\def\gumericNumCols{3}
+\def\gumericNumCols{15}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
          \tabcolsep*\gumericNumCols*2+\arrayrulewidth*\gumericNumCols}
 \ifthenelse{\lengthtest{\gnumericTableWidthComplete > \linewidth}}%
@@ -145,16 +157,38 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{133pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{54pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{57pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColG}}{\newlength{\gnumericColG}}{}\settowidth{\gnumericColG}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColH}}{\newlength{\gnumericColH}}{}\settowidth{\gnumericColH}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColI}}{\newlength{\gnumericColI}}{}\settowidth{\gnumericColI}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColJ}}{\newlength{\gnumericColJ}}{}\settowidth{\gnumericColJ}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColK}}{\newlength{\gnumericColK}}{}\settowidth{\gnumericColK}{\begin{tabular}{@{}p{15pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColL}}{\newlength{\gnumericColL}}{}\settowidth{\gnumericColL}{\begin{tabular}{@{}p{10pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColM}}{\newlength{\gnumericColM}}{}\settowidth{\gnumericColM}{\begin{tabular}{@{}p{10pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColN}}{\newlength{\gnumericColN}}{}\settowidth{\gnumericColN}{\begin{tabular}{@{}p{17pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColO}}{\newlength{\gnumericColO}}{}\settowidth{\gnumericColO}{\begin{tabular}{@{}p{17pt*\gnumericScale}@{}}x\end{tabular}}
 
-\begin{table}[H]
-\centering
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
 	b{\gnumericColB}%
 	b{\gnumericColC}%
+	b{\gnumericColD}%
+	b{\gnumericColE}%
+	b{\gnumericColF}%
+	b{\gnumericColG}%
+	b{\gnumericColH}%
+	b{\gnumericColI}%
+	b{\gnumericColJ}%
+	b{\gnumericColK}%
+	b{\gnumericColL}%
+	b{\gnumericColM}%
+	b{\gnumericColN}%
+	b{\gnumericColO}%
 	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,136 +199,242 @@
 %%  the first, last or every page. Use \multicolumn if you want.    %%
 
 %%  Header for the first page.                                      %%
-%	\multicolumn{3}{c}{The First Header} \\ \hline 
+%	\multicolumn{15}{c}{The First Header} \\ \hline 
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
+%	&\multicolumn{1}{c}{colTag}	%Column 3
+%	&\multicolumn{1}{c}{colTag}	%Column 4
+%	&\multicolumn{1}{c}{colTag}	%Column 5
+%	&\multicolumn{1}{c}{colTag}	%Column 6
+%	&\multicolumn{1}{c}{colTag}	%Column 7
+%	&\multicolumn{1}{c}{colTag}	%Column 8
+%	&\multicolumn{1}{c}{colTag}	%Column 9
+%	&\multicolumn{1}{c}{colTag}	%Column 10
+%	&\multicolumn{1}{c}{colTag}	%Column 11
+%	&\multicolumn{1}{c}{colTag}	%Column 12
+%	&\multicolumn{1}{c}{colTag}	%Column 13
+%	&\multicolumn{1}{c}{colTag}	%Column 14
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endfirsthead
 
 %%  The running header definition.                                  %%
 %	\hline
-%	\multicolumn{3}{l}{\ldots\small\slshape continued} \\ \hline
+%	\multicolumn{15}{l}{\ldots\small\slshape continued} \\ \hline
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
+%	&\multicolumn{1}{c}{colTag}	%Column 3
+%	&\multicolumn{1}{c}{colTag}	%Column 4
+%	&\multicolumn{1}{c}{colTag}	%Column 5
+%	&\multicolumn{1}{c}{colTag}	%Column 6
+%	&\multicolumn{1}{c}{colTag}	%Column 7
+%	&\multicolumn{1}{c}{colTag}	%Column 8
+%	&\multicolumn{1}{c}{colTag}	%Column 9
+%	&\multicolumn{1}{c}{colTag}	%Column 10
+%	&\multicolumn{1}{c}{colTag}	%Column 11
+%	&\multicolumn{1}{c}{colTag}	%Column 12
+%	&\multicolumn{1}{c}{colTag}	%Column 13
+%	&\multicolumn{1}{c}{colTag}	%Column 14
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endhead
 
 %%  The running footer definition.                                  %%
 %	\hline
-%	\multicolumn{3}{r}{\small\slshape continued\ldots} \\
+%	\multicolumn{15}{r}{\small\slshape continued\ldots} \\
 %	\endfoot
 
 %%  The ending footer definition.                                   %%
-%	\multicolumn{3}{c}{That's all folks} \\ \hline 
+%	\multicolumn{15}{c}{That's all folks} \\ \hline 
 %	\endlastfoot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hhline{|-|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\textbf{Component}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}\textbf{Value}}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedright}\textbf{Quantity}}
-\\
-\hhline{|---|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}Breadboard}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}1}
-\\
-\hhline{|---|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}Jumper Wires}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}20}
-\\
-\hhline{|---|}
+\hhline{|-|----|----|--|----}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
 	{\setlength{\gnumericMultiRowLength}{0pt}%
 	 \addtolength{\gnumericMultiRowLength}{\gnumericColA}%
-	 \multirow{2}[1]{\gnumericMultiRowLength}{\parbox{\gnumericMultiRowLength}{%
-	 \gnumericPB{\raggedright}Resistor}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}220 Ohm}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}3}
-\\
-\hhline{~|--|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}10K Ohm}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}1}
-\\
-\hhline{|---|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
+	 \multirow{2}[1]{\gnumericMultiRowLength}{%
+	 }}
+	&\multicolumn{4}{p{	\gnumericColB+%
+	\gnumericColC+%
+	\gnumericColD+%
+	\gnumericColE+%
+	\tabcolsep*2*3}|}%
+	{\gnumericPB{\centering}\textbf{INPUT}}
+	&\multicolumn{4}{p{	\gnumericColF+%
+	\gnumericColG+%
+	\gnumericColH+%
+	\gnumericColI+%
+	\tabcolsep*2*3}|}%
+	{\gnumericPB{\centering}\textbf{OUTPUT}}
+	&\multicolumn{2}{c|}%
 	{\setlength{\gnumericMultiRowLength}{0pt}%
-	 \addtolength{\gnumericMultiRowLength}{\gnumericColA}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColJ}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColK}%
+	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
 	 \multirow{2}[1]{\gnumericMultiRowLength}{\parbox{\gnumericMultiRowLength}{%
-	 \gnumericPB{\raggedright}Capacitor}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}10 uF}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}2}
+	 \gnumericPB{\centering}CLOCK}}}
+	&\multicolumn{4}{c|}%
+	{\setlength{\gnumericMultiRowLength}{0pt}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColL}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColM}%
+	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColN}%
+	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
+	 \addtolength{\gnumericMultiRowLength}{\gnumericColO}%
+	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
+	 \multirow{3}[1]{\gnumericMultiRowLength}{\parbox{\gnumericMultiRowLength}{%
+	 \gnumericPB{\centering}5V}}}
 \\
-\hhline{~|--|}
+\hhline{~|-|-|-|--|-|-|-|~~~~~~}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}22 pF}
+	{\gnumericPB{\centering}W}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}2}
-%\\
-%\hhline{|---|}
-%	 \multicolumn{1}{|p{\gnumericColA}|}%
-%	{\gnumericPB{\raggedright}Regulator}
-%	&\multicolumn{1}{p{\gnumericColB}|}%
-%	{\gnumericPB{\raggedleft}7805}
-%	&\multicolumn{1}{p{\gnumericColC}|}%
-%	{\gnumericPB{\raggedleft}1}
+	{\gnumericPB{\centering}X}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\centering}Y}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\centering}Z}
+	&\multicolumn{1}{p{\gnumericColF}|}%
+	{\gnumericPB{\centering}A}
+	&\multicolumn{1}{p{\gnumericColG}|}%
+	{\gnumericPB{\centering}B}
+	&\multicolumn{1}{p{\gnumericColH}|}%
+	{\gnumericPB{\centering}C}
+	&\multicolumn{1}{p{\gnumericColI}|}%
+	{\gnumericPB{\centering}D}
+	&
+	&\multicolumn{1}{p{\gnumericColK}|}%
+	{}
+	&
+	&
+	&
+	&\multicolumn{1}{p{\gnumericColO}|}%
+	{}
 \\
-\hhline{|---|}
+\hhline{|-----------|~~~~}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}Crystal}
+	{\gnumericPB{\centering}Arduino}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}16 Mhz}
+	{\gnumericPB{\centering}D6}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}1}
+	{\gnumericPB{\centering}D7}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\centering}D8}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\centering}D9}
+	&\multicolumn{1}{p{\gnumericColF}|}%
+	{\gnumericPB{\centering}D2}
+	&\multicolumn{1}{p{\gnumericColG}|}%
+	{\gnumericPB{\centering}D3}
+	&\multicolumn{1}{p{\gnumericColH}|}%
+	{\gnumericPB{\centering}D4}
+	&\multicolumn{1}{p{\gnumericColI}|}%
+	{\gnumericPB{\centering}D5}
+	&\multicolumn{2}{p{	\gnumericColJ+%
+	\gnumericColK+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}D13}
+	&
+	&
+	&
+	&\multicolumn{1}{p{\gnumericColO}|}%
+	{}
 \\
-\hhline{|---|}
+\hhline{|----|----|--|--|-|-|-|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}ATMEGA328P}
+	{\gnumericPB{\centering}7474}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\centering}5}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}9}
+	&\multicolumn{2}{p{	\gnumericColD+%
+	\gnumericColE+%
+	\tabcolsep*2*1}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColF}|}%
+	{\gnumericPB{\centering}2}
+	&\multicolumn{1}{p{\gnumericColG}|}%
+	{\gnumericPB{\centering}12}
+	&\multicolumn{2}{p{	\gnumericColH+%
+	\gnumericColI+%
+	\tabcolsep*2*1}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColJ}|}%
+	{\gnumericPB{\centering}CLK1}
+	&\multicolumn{1}{p{\gnumericColK}|}%
+	{\gnumericPB{\centering}CLK2}
+	&\multicolumn{1}{p{\gnumericColL}|}%
+	{\gnumericPB{\centering}1}
+	&\multicolumn{1}{p{\gnumericColM}|}%
+	{\gnumericPB{\centering}4}
+	&\multicolumn{1}{p{\gnumericColN}|}%
+	{\gnumericPB{\centering}10}
+	&\multicolumn{1}{p{\gnumericColO}|}%
+	{\gnumericPB{\centering}13}
+\\
+\hhline{|----|----|-------|}
+	 \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}7474}
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}1}
-\\
-\hhline{|---|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}Seven Segment Display}
-	&\multicolumn{1}{p{\gnumericColB}|}%
 	{}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}1}
-\\
-\hhline{|---|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}LED}
-	&\multicolumn{1}{p{\gnumericColB}|}%
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\centering}5}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\centering}9}
+	&\multicolumn{1}{p{\gnumericColF}|}%
 	{}
-	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\raggedleft}2}
+	&\multicolumn{1}{p{\gnumericColG}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColH}|}%
+	{\gnumericPB{\centering}2}
+	&\multicolumn{1}{p{\gnumericColI}|}%
+	{\gnumericPB{\centering}12}
+	&\multicolumn{1}{p{\gnumericColJ}|}%
+	{\gnumericPB{\centering}CLK1}
+	&\multicolumn{1}{p{\gnumericColK}|}%
+	{\gnumericPB{\centering}CLK2}
+	&\multicolumn{1}{p{\gnumericColL}|}%
+	{\gnumericPB{\centering}1}
+	&\multicolumn{1}{p{\gnumericColM}|}%
+	{\gnumericPB{\centering}4}
+	&\multicolumn{1}{p{\gnumericColN}|}%
+	{\gnumericPB{\centering}10}
+	&\multicolumn{1}{p{\gnumericColO}|}%
+	{\gnumericPB{\centering}13}
 \\
-\hhline{|-|-|-|}
+\hhline{|--|-|-|--------|-|-|-|}
+	 \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}7447}
+	&\multicolumn{4}{p{	\gnumericColB+%
+	\gnumericColC+%
+	\gnumericColD+%
+	\gnumericColE+%
+	\tabcolsep*2*3}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColF}|}%
+	{\gnumericPB{\centering}7}
+	&\multicolumn{1}{p{\gnumericColG}|}%
+	{\gnumericPB{\centering}1}
+	&\multicolumn{1}{p{\gnumericColH}|}%
+	{\gnumericPB{\centering}2}
+	&\multicolumn{1}{p{\gnumericColI}|}%
+	{\gnumericPB{\centering}6}
+	&\multicolumn{1}{p{\gnumericColJ}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColK}|}%
+	{}
+	&\multicolumn{4}{p{	\gnumericColL+%
+	\gnumericColM+%
+	\gnumericColN+%
+	\gnumericColO+%
+	\tabcolsep*2*3}|}%
+	{\gnumericPB{\centering}16}
+\\
+\hhline{|-|----|-|-|-|-|-|-|----|}
 \end{tabular}
-\caption{}
-\label{table:components}
-\end{table}
+
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
 \gnumericTableEnd

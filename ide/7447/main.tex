@@ -5,14 +5,14 @@ Here we show how to use the 7447 BCD-Seven Segment Display decoder to learn Bool
 \item
 Make connections between the seven segment display in Fig. \ref{fig:sevenseg} and the  7447 IC in Fig. \ref{fig:7447} as shown in Table \ref{table:7447_disp}
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \input{ide/7447/figs/components.tex}
 \caption{7447 components}
 \label{table:components-7447}
 \end{table}
 %
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \input{ide/7447/figs/7447_disp.tex}
 \caption{}
@@ -20,7 +20,7 @@ Make connections between the seven segment display in Fig. \ref{fig:sevenseg} an
 \end{table}
 %
 \iffalse
-\begin{figure}[!ht]
+\begin{figure}[H]
 \begin{center}
 \resizebox {0.5\columnwidth} {!} {
 \input{ide/7447/figs/sevenseg.tex}
@@ -35,14 +35,14 @@ Make connections to the lower pins of the 7447 according to
 Table \ref{table:bin2dec} and connect $V_{CC} = 5$V. You should see the number 0 displayed for 0000 and 1 for 0001.
 
 %
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \input{ide/7447/figs/bin2dec.tex}
 \caption{}
 \label{table:bin2dec}
 \end{table}
 %
-\begin{figure}[!ht]
+\begin{figure}[H]
 \begin{center}
 \resizebox {\columnwidth} {!} {
 \input{ide/7447/figs/7447.tex}
@@ -65,7 +65,7 @@ Now make the connections as per Table \ref{table:7447_ard}  and execute the foll
 ide/7447/codes/gvv_ard_7447/gvv_ard_7447.cpp
 \end{lstlisting}
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \input{ide/7447/figs/7447_ard.tex}
 \caption{}
@@ -89,7 +89,7 @@ The code below realizes the Boolean logic for B, C and D in  Table \ref{tab:ide/
 ide/7447/codes/inc_dec/inc_dec.ino
 \end{lstlisting}
 
-%		\begin{table}[!t]
+%		\begin{table}[H]
 \begin{table*}[!t]
 \centering
 %\resizebox{\columnwidth}{!}{ 
@@ -108,7 +108,7 @@ ide/7447/codes/ip_inc_dec/ip_inc_dec.cpp
 
 \solution
 In this exercise, we are taking the number 5 as input to the arduino and displaying it on the seven segment display using the 7447 IC.
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \input{ide/7447/figs/ip_7447_ard.tex}
 \caption{}

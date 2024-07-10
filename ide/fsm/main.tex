@@ -11,7 +11,7 @@ the {\em delay} is part of {\em sequential} logic
 \item \figref{fig:fsm_counter} shows a {\em finite state machine} (FSM) diagram for the decade counter in Fig \ref{fig:decade_counter}  $s_0$ is the state when the input to the incrementing decoder is 0  The {\em state transition table} for the FSM is Table \ref{tab:ide/7447/counter_decoder},
 %	0 in \cite{gvv_kmap}
 		where the present state is denoted by the variables $W,X,Y,Z$ and the next state by $A,B,C,D$.  
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
 %\resizebox {\columnwidth} {!} {
 \input{ide/fsm/figs/fsm_counter}
@@ -21,7 +21,7 @@ the {\em delay} is part of {\em sequential} logic
 \end{figure}
 \item The FSM implementation is available in Fig \ref{fig:dff}  The {\em flip-flops} hold the input for the time that is given by the {\em clock}  This is nothing but the implementation of the {\em Delay} block in Fig \ref{fig:decade_counter}
 %
-\begin{figure}[!h]
+\begin{figure}[H]
 \resizebox {\columnwidth} {!} {
 \input{ide/fsm/figs/dff}
 }

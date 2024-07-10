@@ -1,4 +1,8 @@
 \documentclass[journal]{IEEEtran}
+%\documentclass[journal,a5paper]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
 \usepackage{gvv-book}
 \usepackage{gvv}
 
@@ -48,7 +52,8 @@ First manual appeared in 2015
 \tableofcontents
 
 \newpage
-\twocolumn
+%\twocolumn
+\onecolumn
 
 
 \numberwithin{figure}{section}
@@ -70,7 +75,6 @@ First manual appeared in 2015
 \input{ide/7447/main.tex}
 \subsection{Problems}
 \input{ide/7447/problems.tex}
-
 \newpage
 \section{Karnaugh Map}
 \subsection{ Incrementing Decoder}
@@ -118,4 +122,3 @@ First manual appeared in 2015
 \subsection{Problems}
 \input{avr-gcc/Platformio_Question.tex}
 \end{document}
-

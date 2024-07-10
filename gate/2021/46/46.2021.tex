@@ -49,7 +49,7 @@ frame=lines
 \section{Problem}
 (GATE2021-QP-EC)\\
 Q.46 The propogation delay of the exclusive-OR(XOR) gate in the circuit in the figure is 3ns.The propogation delay of all the flip-flops is assumed to be zero.The clock(Clk) frequency provided to the circuit is 500MHz.\\
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \resizebox{0.5\columnwidth}{!}{
 \input{figs/fig1.tex}
@@ -66,7 +66,7 @@ A random number generator using D flip-flops is a simple digital circuit that ge
 The feedback loop creates a delay in the circuit,which causes the circuit to exhibit unpredictable behavior.This unpredictable behavior results in a sequence of random binary values. The length of the delay can be adjusted to control the randomness of the output.
 
 \section{Components}
-\begin{table}[!h]
+\begin{table}[H]
 \centering
 \input{tables/table1.tex}
 \caption{Components}
@@ -79,7 +79,7 @@ The seven segment display has eight pins, \emph{a,b,c,d,e,f,g} and \emph{dot} th
 \section{Implementation}
 A 7474 IC which  has 14 pins and can store two seperate binary values.So we consider two IC's since we have three values  and connect the  D inputs of each flip-flop to the input signals of 7447 IC . Later interface 7447 IC to seven segment display for the output. The CLK input is used to trigger the flip-flop,and the Q output is used to read the stored value.When a positive edge is detected on the CLK input,the current value on the D input is stored in the flip-flop. The boolean expression of the D flip-flop is $Q(t+1) = D$
 \subsection{Truth table}
-\begin{table}[!h]
+\begin{table}[H]
 \centering
 \input{tables/table2.tex}   
 \caption{Truth Table}
@@ -87,7 +87,7 @@ A 7474 IC which  has 14 pins and can store two seperate binary values.So we cons
 \end{table}
 \subsection{K-map}
 Since $Q'= D$,we find the k-maps for D as outputs\\
-\begin{figure}[!h]                                
+\begin{figure}[H]                                
 \begin{center}                                 
 \resizebox{0.5\columnwidth}{!}{
 \input{figs/kmap1.tex}
@@ -97,7 +97,7 @@ Since $Q'= D$,we find the k-maps for D as outputs\\
 \label{fig:for_D2}                             
 \end{figure}
 %
-\begin{figure}[!h]                              
+\begin{figure}[H]                              
 \begin{center}                                 
 \resizebox{0.5\columnwidth}{!}{
 \input{figs/kmap2.tex}
@@ -107,7 +107,7 @@ Since $Q'= D$,we find the k-maps for D as outputs\\
 \label{fig:for_D1}                             
 \end{figure}
 %
-\begin{figure}[!h]                             
+\begin{figure}[H]                             
 \begin{center}                                
 \resizebox{0.5\columnwidth}{!}{
 \input{figs/kmap3.tex}
@@ -127,14 +127,14 @@ By solving the K-maps above we obtain as follows :
 \section{Hardware}
 \begin{enumerate}
 \item Make the connections between the seven segment display and the 7447 IC as shown in Table3
-\begin{table}[!h]                                
+\begin{table}[H]                                
 \centering
 \input{tables/table3.tex}   
 \caption{7447}                               
 \label{table:7447}                       
 \end{table}
 \item Connect the Arduino,7447 and the two 7474 ICs according to Table4
-\begin{table}[!h]                                 
+\begin{table}[H]                                 
 \centering	
 \input{tables/table4.tex} 
 \caption{Connections}                                   
